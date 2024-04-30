@@ -1,16 +1,17 @@
-# War-Game
-The classis War-Game card game, written in java.
+# War Game
+The classic War card game, implemented in Java.
 
-## Preparations for the game
-First, a new deck of cards is shuffled randomly, and the cards are evenly divided between the two players by
-giving one card to each player (in alphabetical order of their names) until there are no cards left in the deck.
+## Game Setup
+To start, a deck of cards is shuffled and then evenly distributed between two players. Cards are dealt one at a time to each player in alphabetical order of their names until the deck is depleted.
 
-## the progress of the game
-The game consists of several rounds. In each round the two participants draw the top card from their deck (in alphabetical order
-Of their names), and put it in a central pile. The participant who pulled out the card with the highest number takes both cards, and puts them in a separate pile of his own (different from the pile of cards he is playing with).
-In case both players pulled the same card, they will start a "war" between them: a draw of two cards followed by a third card. The winner of the war is the one
-who draws the third highest card, and he takes all the cards of the round. If The participants draw the same card again, they will wage another war between them (and so on).
-Each time a participant has to draw a card but the deck of cards that is in his hand is over, he must shuffle his second deck
-(The deck of cards he has won), and turn this stack into his game deck, without changing the order of the cards after shuffling.
-When he wins more cards, he puts them back in a separate pile.
-If the participant also runs out of cards in his second deck, he leaves the game and loses.
+## Gameplay
+The game is played in several rounds. Each round, both players draw the top card from their decks (also in alphabetical order of their names) and place it in a central pile. The player with the higher card wins the round and collects both cards, placing them in a separate winnings pile.
+
+### Handling Ties: The "War"
+If the cards are the same, a "war" begins. Each player draws two cards and then a third card. The player with the higher third card wins all the cards played in this round. If the third cards are also the same, the war repeats with additional sets of three cards until there is a winner.
+
+### Recycling Cards
+If a player needs to draw a card but their main deck is empty, they must shuffle their winnings deck and use it as their new main deck. The order of the cards after shuffling should remain unchanged. Won cards are always added to the separate winnings pile.
+
+### Game End
+The game ends when a player runs out of cards in both their main and winnings decks, resulting in their loss.
